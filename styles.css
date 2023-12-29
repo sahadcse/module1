@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* color variable declear */
+:root {
+  --pc: #0077ff;
+  --br: rgb(172, 178, 180);
+}
+
+/* Set a background color */
+body {
+  background-color: #f2f2f2;
+  width: 100%;
+  font-family: roboto;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+li {
+  list-style-type: none;
+}
+
+.container {
+  display: flex;
+}
+.aside1 {
+  width: 20%;
+}
+.main {
+  width: 60%;
+}
+.aside2 {
+  width: 20%;
+}
+
+.aside1_header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+}
+.aside1_header :nth-child(1) {
+  font-size: 1.5rem;
+  color: var(--pc);
+}
+.aside1_header :nth-child(3) {
+  font-size: 1rem;
+  color: var(--pc);
+  background-color: bisque;
+  padding: 4px;
+  border: solid 1px var(--pc);
+  border-radius: 20px;
+}
+
+.nav_ul {
+  padding: 20px 28px;
+}
+.nav_ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.nav_li :nth-child(1) {
+  font-size: 1.2rem;
+  color: var(--pc);
+  width: 2rem;
+}
+.nav_li :nth-child(3) {
+  color: var(--pc);
+  margin-left: auto;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  width: 95%;
+}
+.user-logo {
+  margin-right: 1rem;
+}
+
+.logout {
+  color: var(--pc);
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+}
+
+.main {
+  padding: 1rem;
+}
+
+.search {
+  width: 100%;
+  height: 55vh;
+  position: relative;
+}
+
+.search img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem;
+}
+.search input {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+.nav_main {
+  border-bottom: solid 2px rgb(172, 178, 180);
+}
+
+.nav_main_ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.5rem 0;
+}
+.nav_three_spec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav_three_spec button {
+  font-size: 0.8rem;
+  background-color: var(--pc);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.3rem 0.5rem;
+}
+
+.nav_three_spec :nth-child(2) {
+  background-color: transparent;
+  border: solid 1px var(--br);
+  padding: 0.3rem 0.5rem;
+  margin: 0 0.5rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+.nav_three_spec :nth-child(3) {
+  background-color: transparent;
+  border: solid 1px var(--br);
+  padding: 0.3rem 0.9rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+.user_sec {
+  border: solid 1px var(--br);
+  border-radius: 0.5rem;
+  padding: 0.7rem;
+  margin: 1.2rem 0;
+}
+.user_main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.user_logo_name {
+  display: flex;
+  align-items: center;
+}
+.user_logo_name img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+.user_name_time {
+  margin-left: 1rem;
+}
+.user_name_time p {
+  font-size: 0.7rem;
+  color: var(--pc);
+}
+.user_option {
+  border: solid 1px var(--br);
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.4rem;
+  cursor: pointer;
+}
+
+.post {
+  margin-bottom: 1rem;
+  /* color: #716767; */
+  font-family: monospace;
+  border-bottom: solid 1px var(--br);
+  padding-bottom: 1rem;
+}
+
+.post-options {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: solid 1px var(--br);
+  padding-bottom: 1rem;
+}
+.post-option {
+  margin-right: 2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: var(--pc);
+}
+.post-option :nth-child(1) {
+  margin-right: 0.5rem;
+}
+
+.post_comment {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.post_comment_img {
+  width: 5%;
+  margin-right: 1rem;
+}
+
+.post_comment_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+.comment_input_logos {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  position: relative;
+}
+.comment_input_logos input {
+  width: 100%;
+  padding: 0.5rem;
+  border: .1rem solid #555;
+  outline: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.comment_form_logos{
+  position: absolute;
+  right: 0;
+  margin-right: 1rem;
+}
+.comment_form_logos i{
+  margin-left: .5rem;
+  cursor: pointer;
+  color: #555
+}
+
+.connection{
+  border: solid 1px var(--br);
+  border-radius: 0.5rem;
+  margin: 1.2rem 0;
+  margin-right: 1rem;
+  box-shadow: 0 0 15px #afa6a6 ;
+}
+.connection_heading{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem;
+  border-bottom: solid 1px var(--br);
+}
+.connection_heading button{
+  border: none;
+}
+
+.connection_user{
+  display: flex;
+  align-items: center;
+  padding: 0.8rem;
+  border-bottom: solid 1px var(--br);
+  justify-content: space-between;
+}
+.connection_user img{
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+.connection_info{
+  margin-left: -2.3rem;
+}
+.connection_info p{
+  color: #555;
+}
+.connection_user i{
+  color: var(--pc);
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.all_connection{
+  justify-content: center;
+  display: flex;
+  padding: .5rem 0;
+}
+.all_connection button{
+  border: none;
+  background-color: transparent;
+  color: var(--pc);
+  cursor: pointer;
+  font-size: 1rem;
+  border-bottom: dotted 2px var(--pc);
+}
+
+.tags{
+  border: solid 1px var(--br);
+  border-radius: 0.5rem;
+  margin: 1.2rem 0;
+  margin-right: 1rem;
+  box-shadow: 0 0 15px #afa6a6 ;
+}
+.tags h4{
+  padding: 0.8rem;
+  border-bottom: solid 1px var(--br);
+}
+.tags_types {
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem;
+  border-bottom: solid 1px var(--br);
+}
+.tags_types button{
+  border: none;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: #e7e4e4;
+  padding: 0.3rem 0.5rem;
+  margin: 0 0.5rem 0.5rem 0;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Landing Page</title>
+
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/f875cc8c6c.js" crossorigin="anonymous"></script>
+
+</head>
+<body class="container">
+  <!-- // Aside for header, nav and user(name logo, loin, register, logout) -->
+  <aside class="aside1">
+
+    <!-- Header -->
+    <header class="aside1_header">
+      <i class="fa-brands fa-square-pied-piper"></i>
+      <h2>PLP</h2>
+      <i class="fa-regular fa-bell"></i>
+    </header>
+    <!-- End of the HEader -->
+    
+    <!-- Nav -->
+    <nav class="nav">
+      <ul class="nav_ul">
+        <li class="nav_li">
+          <i class="fa-brands fa-dashcube"></i>
+          <a href="#">Dashboard</a>
+          <i class="fa-solid fa-chevron-down"></i>
+        </li>
+        <li  class="nav_li">
+          <i class="fa-regular fa-file"></i>
+          <a href="#">Pages</a>
+          <i class="fa-solid fa-chevron-down"></i>
+        </li>
+        <li class="nav_li">
+          <i class="fa-brands fa-app-store"></i>
+          <a href="#">APPS</a>
+          <i class="fa-solid fa-chevron-down"></i>
+        </li>
+        <li class="nav_li">
+          <i class="fa-solid fa-briefcase"></i>
+          <a href="#">Utilites</a>
+          <i class="fa-solid fa-chevron-down"></i>
+        </li>
+        <li class="nav_li">
+          <i class="fa-solid fa-question"></i>
+          <a href="#">Help</a>
+          <i class="fa-solid fa-chevron-down"></i>
+        </li>
+      </ul>
+    </nav>
+    <!-- End of the Nav -->
+
+    <!-- User -->
+    <div class="user">
+      <div class="user-logo">
+        <i class="fa-regular fa-user fa-xl"></i>
+      </div>
+      <div class="user-name">
+        <p>John Doe</p>
+      </div>
+      <button class="logout">
+        <i class="fa-solid fa-sign-out" title="Logout"></i>
+      </button>
+    </div>
+    <!-- End of the User -->
+
+  </aside>
+
+  <!-- // Main content -->
+  <main  class="main">
+    <!-- backgroung image with search bar -->
+    <div class="search">
+      <img src="./img/search.jpg" alt="search image">
+      <input type="text" placeholder="Search">
+    </div>
+    <!-- // Nav menus for profile and button for creating todos and others -->
+    <nav class="nav_main">
+      <ul class="nav_main_ul">
+        <li class="nav_main_li"><a href="#">Profile</a></li>
+        <li class="nav_main_li"><a href="#">Projects</a></li>
+        <li class="nav_main_li"><a href="#">Connections</a></li>
+        <li class="nav_main_li"><a href="#">Campaings</a></li>
+        <li class="nav_main_li"><a href="#">Documents</a></li>
+        <li class="nav_main_li"><a href="#">Activity</a></li>
+        <li class="nav_main_li nav_three_spec">
+          <button><i class="fa-regular fa-plus"></i> New Post</button>
+          <i class="fa-regular fa-message"></i>
+          <i class="fa-solid fa-ellipsis-vertical "></i>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Todos Post and details -->
+    <section class="user_sec">
+      <!-- user image and name -->
+      <div class="user_main">
+        <div class="user_logo_name">
+          <img src="https://via.placeholder.com/50" alt="user logo">
+          <div class="user_name_time">
+            <h4 class="user-name">John Doe</h4>
+            <p class="user-time">2 hours ago</p>
+          </div>
+        </div>
+        <div class="user_option">
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
+      </div>
+      <!-- post content -->
+      <div class="post">
+        <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </div>
+      <!-- comment, likes and saves option for the post -->
+      <div class="post-options">
+        <div class="post-option">
+          <i class="fa-regular fa-message"></i>
+          <p>2 Comments</p>
+        </div>
+        <div class="post-option">
+          <i class="fa-regular fa-heart"></i>
+          <p>234 Likes</p>
+        </div>
+        <div class="post-option">
+          <i class="fa-regular fa-bookmark"></i>
+          <p>16 Saves</p>
+        </div>
+      </div>
+      <!-- comment section -->
+      <div class="post_comment">
+        <div  class="post_comment_img">
+          <img src="https://via.placeholder.com/50" alt="user logo">
+        </div>
+        <div class="comment_input_logos">
+          <input type="text" placeholder="Add a comment" >
+          <div class="comment_form_logos">
+            <i class="fa-solid fa-link"></i>
+            <i class="fa-regular fa-image"></i>
+            <i class="fa-regular fa-face-laugh"></i>
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- // Aside for Connections and Tags -->
+  <aside  class="aside2">
+    <!-- Connection -->
+    <div class="connection">
+      <div class="connection_heading">
+        <h4>Connections</h4>
+        <button class=""><i class="fa-solid fa-ellipsis-vertical "></i></button>
+      </div>
+      <div class="connection_user">
+        <img src="https://via.placeholder.com/50" alt="user logo">
+        <div class="connection_info">
+          <h4>John Doe</h4>
+          <p>6 Connections</p>
+        </div>
+        <i class="fa-regular fa-square-plus"></i>
+      </div>
+      <div class="all_connection">
+        <button>All Connections</button>
+      </div>
+    </div>
+    <!-- Tags -->
+    <div class="tags">
+      <h4>Tags</h4>
+      <div class="tags_types">
+        <button>Design</button>
+        <button>Development</button>
+        <button>Marketing</button>
+        <button>SEO</button>
+        <button>Web</button>
+        <button>Graphic</button>
+        <button>Branding</button>
+        <button>Photography</button>
+        <button>Video</button>
+      </div>
+    </div>
+  </aside>
+
+</body>
+</html>
